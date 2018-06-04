@@ -122,11 +122,11 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Her/
-function uniq (arr,cd){
+function uniq (arr,cb){
   var deDuplicated = arr.filter(function(cur, ind, arr){
     return arr.indexOf(cur) == ind
   });
-  cd(deDuplicated)
+  cb(deDuplicated)
 }
 
 // Do not edit the code below.
@@ -167,10 +167,10 @@ each(names, function(item, indice){
 */
 
 // Code here
-function getUserById (arr, id, cd){
+function getUserById (arr, id, cb){
   for(var i = 0; i < arr.length; i++){
     if(id === arr[i].id){
-      return cd(arr[i])
+      return cb(arr[i])
     }
 }
 }
